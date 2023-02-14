@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 w-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body class="w-100 h-100 d-flex flex-column">
+    <h3 class="w-100 bg-primary text-white p-3 text-center">
+      To Do Aplication
+    </h3>
+    <div class="main flex-grow-1 d-flex h-100">
+        <div class="form w-50 h-100 d-flex flex-column p-5">
+          <input
+            type="text"
+            placeholder="Name"
+            id="nameInput"
+            class="form-control"
+          />
+          <div class="form-check mt-3 mb-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="cUrgent"
+            />
+            <label class="form-check-label" for="flexCheckDefault">
+              Urgent
+            </label>
+          </div>
+          <button id="addButton" type="button" class="btn btn-primary">
+            Add
+          </button>
+        </div>
+        <div id="items" class="w-50 p-5">No items.</div>
+      </div>
+    </div>
+    <div
+      class="progress m-3"
+      role="progressbar"
+      aria-label="Basic example"
+      aria-valuenow="0"
+      aria-valuemin="0"
+      aria-valuemax="100"
+    >
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <div
+      class="w-100 bg-primary p-3 d-flex flex-column text-center text-white flex-column"
+    >
+      <h3>Powered by <strong>Abdulah Džankić</strong></h3>
+      <span>adidzankic@gmail.com</span>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
